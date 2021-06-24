@@ -1,0 +1,230 @@
+/* Variables */
+
+:root {
+    --colorlogo: #219ebc;
+    --colornav: #8ecae6;
+    --colorlateral: #023047;
+    --negro: #000;
+    --colorprincipal: #f2f2f2;
+    --extras: #fb8500;
+}
+
+
+/* Globales */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 40%;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+}
+
+
+/* Lista de Pacientes */
+
+
+/* Header y Nav */
+
+.contenedro-sitio {
+    display: grid;
+    grid-template-areas: "header header header header" "lateral principal principal principal" "lateral footer footer footer";
+    grid-template-rows: 10% 1fr 8%;
+    grid-template-columns: 25% 1fr 1fr 1fr;
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    background-color: var(--negro);
+    flex: 0 0 25%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav {
+    background-color: var(--colorlateral);
+    flex: 1;
+    padding: 1rem 0;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    color: var(--extras);
+}
+
+ul a:hover {
+    color: var(--extras);
+}
+
+
+/* Barra Lateral */
+
+.lateral {
+    grid-area: lateral;
+    background-color: var(--colorlateral);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.lateral ul {
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+.lateral ul li {
+    margin: 1rem 0;
+    border-bottom: 1px solid white;
+    padding: 0.5rem 0;
+}
+
+
+/* Contenido Principal */
+
+.principal {
+    grid-area: principal;
+    background-color: var(--colorprincipal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    overflow: scroll;
+}
+
+.titulo-principal {
+    margin: 1.5rem;
+}
+
+.tabla {
+    width: 100%;
+    text-align: center;
+    flex: 0 0 80%;
+}
+
+th {
+    font-size: 1.4rem;
+    border-spacing: 0.2rem;
+}
+
+td {
+    font-size: 1.3rem;
+    border-bottom: 1px dashed black;
+    border-spacing: 0.2rem;
+}
+
+.boton {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-left: 1rem;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.editar {
+    background-color: yellowgreen;
+}
+
+.eliminar {
+    background-color: red;
+}
+
+
+/* Formulario */
+
+.form {
+    flex: 1;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caja {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.añadir {
+    background-color: var(--colorlateral);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.añadir:hover {
+    background-color: green;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.sangre {
+    appearance: none;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    color: gray;
+}
+
+option {
+    color: black;
+}
+
+
+/* Footer */
+
+.footer {
+    grid-area: footer;
+    background-color: var(--negro);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
