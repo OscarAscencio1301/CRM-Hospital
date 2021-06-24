@@ -228,3 +228,20 @@ option {
     justify-content: center;
     font-size: 1.3rem;
 }
+
+
+/* ALerta de error o correcto con JS */
+
+.error {
+    text-align: center;
+    color: red;
+    border: 1px solid red;
+    padding: 0.5rem 1rem;
+}
+
+.correcto {
+    text-align: center;
+    color: green;
+    border: 1px solid green;
+    padding: 0.5rem 1rem;
+}

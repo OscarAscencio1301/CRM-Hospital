@@ -65,16 +65,7 @@ module.exports = {
             filename: './medicos.html',
             inject: 'body'
         }),
-        new HtmlWebPackPlugin({
-            template: './src/añadir-medico.html',
-            filename: './añadir-medico.html',
-            inject: 'body'
-        }),
-        new HtmlWebPackPlugin({
-            template: './src/añadir-paciente.html',
-            filename: './añadir-paciente.html',
-            inject: 'body'
-        }),
+
         new MiniCssExtractPlugin({
             filename: '[name].[fullhash].css',
         }),

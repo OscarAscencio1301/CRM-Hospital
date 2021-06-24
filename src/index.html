@@ -25,28 +25,41 @@
         </header>
         <main class="principal">
             <h1 class="titulo-principal">Lista de Pacientes</h1>
-            <table class="tabla">
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Telefono</th>
-                    <th>Edad</th>
-                    <th>Tipo de Sangre</th>
-                    <th>Acciones</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Oscar</td>
-                    <td>53838392</td>
-                    <td>24</td>
-                    <td>RO+</td>
-                    <td>
-                        <button href="#" class="editar boton">Editar</button>
-                        <button href="#" class="eliminar boton">Eliminar</button>
-                    </td>
-                </tr>
+            <table class="tabla-paciente">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Telefono</th>
+                        <th>Edad</th>
+                        <th>Tipo de Sangre</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                </tbody>
 
             </table>
+            <h1 class="titulo-principal">Añadir Paciente</h1>
+            <form action="" id="formulario-paciente" class="form">
+                <input type="text" name="nombrepaciente" id="nombrepaciente" placeholder="Introduce su nombre" class="caja">
+                <input type="tel" name="telefonopaciente" id="telefonopaciente" placeholder="Introduce su telefono" class="caja">
+                <input type="text" name="edadpaciente" id="edadpaciente" placeholder="Introduce su edad" class="caja">
+                <select name="sangrepaciente" id="sangrepaciente" class="sangre">
+                    <option value="">Selecciona el tipo de sangre</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+                <input type="submit" value="Añadir" class="añadir">
+            </form>
 
         </main>
         <aside class="lateral">
@@ -60,12 +73,7 @@
                     <li>
                         <a href="medicos.html">Ver Médicos Disponibles</a>
                     </li>
-                    <li>
-                        <a href="añadir-paciente.html">Añadir Paciente</a>
-                    </li>
-                    <li>
-                        <a href="añadir-medico.html">Añadir Médico</a>
-                    </li>
+
 
                 </ul>
             </div>
@@ -74,6 +82,7 @@
             <h3>Desarrollado por: <span>Oscar Ascencio</span> </h3>
         </footer>
     </div>
+
 </body>
 
 </html>
